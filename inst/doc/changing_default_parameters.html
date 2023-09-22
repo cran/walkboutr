@@ -340,7 +340,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(walkboutr)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(walkboutr)</span></code></pre></div>
 <p><code>walkboutr</code> comes with several preset parameters. The
 parameters that we are using are:</p>
 <p>
@@ -358,7 +358,7 @@ epochs and is the minimum amount of time that must elapse for something
 to be considered a bout. A minimum bout length is equal to a minimum
 bout length of 5 minutes.</li>
 <li><strong>Local time zone</strong>
-<code>local_time_zone = &quot;US/Pacific&quot;</code> For the purposes of
+<code>local_time_zone = &quot;America/Los_Angeles&quot;</code> For the purposes of
 evaluating whether we have a complete day of data (a flag that is passed
 as an output of this package), we use the local time zone of your
 data.</li>
@@ -377,12 +377,12 @@ pass them into the functions. If you pass nothing, the above default
 parameter values will be used.</p>
 <p>For example, if we generate some sample data, we can then pass in a
 different parameter value.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>gps_data <span class="ot">&lt;-</span> <span class="fu">generate_walking_in_seattle_gps_data</span>()</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>accelerometry_counts <span class="ot">&lt;-</span> <span class="fu">make_full_day_bout_without_metadata</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>gps_data <span class="ot">&lt;-</span> <span class="fu">generate_walking_in_seattle_gps_data</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>accelerometry_counts <span class="ot">&lt;-</span> <span class="fu">make_full_day_bout_without_metadata</span>()</span></code></pre></div>
 <p>Now that we have sample data, we can look at how
 <code>walkboutr</code> generates bouts:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>walk_bouts <span class="ot">&lt;-</span> <span class="fu">identify_walk_bouts_in_gps_and_accelerometry_data</span>(gps_data, accelerometry_counts, <span class="at">epoch_length =</span> <span class="dv">15</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>summary_walk_bouts <span class="ot">&lt;-</span> <span class="fu">summarize_walk_bouts</span>(walk_bouts)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>walk_bouts <span class="ot">&lt;-</span> <span class="fu">identify_walk_bouts_in_gps_and_accelerometry_data</span>(gps_data, accelerometry_counts, <span class="at">epoch_length =</span> <span class="dv">15</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>summary_walk_bouts <span class="ot">&lt;-</span> <span class="fu">summarize_walk_bouts</span>(walk_bouts)</span></code></pre></div>
 <p>This will change the way we treat epochs to regard them as 15 second
 intervals rather than 30 second intervals. The same can be done with any
 parameters listed above.</p>

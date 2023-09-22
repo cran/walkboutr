@@ -340,7 +340,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(walkboutr)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(walkboutr)</span></code></pre></div>
 <p>The <code>walkboutr</code> package has several functions to generate
 sample data so that you can see how the package works in practice. We
 generate GPS data and accelerometry data separately, as that is how you
@@ -362,7 +362,7 @@ values in km/h</li>
 </ul>
 <p>These data will be processed and later combined with accelerometry
 data to generate walkbouts. #### Generating sample GPS data</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>gps_data <span class="ot">&lt;-</span> <span class="fu">generate_gps_data</span>(<span class="at">start_lat =</span> <span class="fl">40.7128</span>, <span class="at">start_long =</span> <span class="fl">74.0060</span>, <span class="at">start_time =</span> lubridate<span class="sc">::</span><span class="fu">ymd_hms</span>(<span class="st">&#39;2012-04-07 00:00:30&#39;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>gps_data <span class="ot">&lt;-</span> <span class="fu">generate_gps_data</span>(<span class="at">start_lat =</span> <span class="fl">40.7128</span>, <span class="at">start_long =</span> <span class="fl">74.0060</span>, <span class="at">start_time =</span> lubridate<span class="sc">::</span><span class="fu">ymd_hms</span>(<span class="st">&#39;2012-04-07 00:00:30&#39;</span>))</span></code></pre></div>
 <p>These sample GPS data meet all of the characteristics outlined
 above:</p>
 <table>
@@ -416,7 +416,7 @@ above:</p>
 <p><code>walkboutr</code> also has a function to generate a realistic
 walking route in Seattle, which is simply meant to provide another
 example for generating data and becoming familiar with the package:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>seattle <span class="ot">&lt;-</span> <span class="fu">generate_walking_in_seattle_gps_data</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>seattle <span class="ot">&lt;-</span> <span class="fu">generate_walking_in_seattle_gps_data</span>()</span></code></pre></div>
 <p>These data look exactly the same as the randomly generated sample GPS
 data:</p>
 <table>
@@ -488,7 +488,7 @@ can see the differences based on the size of the dataset. The following
 functions are included for you to generate sample data:</p>
 <p>For the purposes of this example, we will create generate the
 smallest walk bout.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>accelerometry_counts <span class="ot">&lt;-</span> <span class="fu">make_smallest_bout_without_metadata</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>accelerometry_counts <span class="ot">&lt;-</span> <span class="fu">make_smallest_bout_without_metadata</span>()</span></code></pre></div>
 <p>These sample accelerometry data meet all of the characteristics
 outlined above:</p>
 <table>
@@ -535,7 +535,7 @@ are here to give you an idea of what a full dataset looks like as it
 goes into the final steps of the package.</p>
 <p>In order to generate these data, you can use the
 <code>make_full_walk_bout_df</code> function:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>walk_bouts <span class="ot">&lt;-</span> <span class="fu">make_full_walk_bout_df</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>walk_bouts <span class="ot">&lt;-</span> <span class="fu">make_full_walk_bout_df</span>()</span></code></pre></div>
 <p>This dataset looks like this:</p>
 <table>
 <colgroup>
