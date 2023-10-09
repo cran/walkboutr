@@ -1,6 +1,6 @@
 Package: walkboutr
 Title: Generate Walk Bouts from GPS and Accelerometry Data
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: 
     c(person("Lauren Blair", "Wilner", 
     email = "wilnerl@uw.edu", 
@@ -22,10 +22,10 @@ Imports: data.table, dplyr, geosphere, ggforce, ggplot2, lubridate,
 Suggests: knitr, rmarkdown, testthat, tinytest, utils
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2023-09-22 23:12:24 UTC; laurenwilner
+Packaged: 2023-10-09 17:02:13 UTC; laurenwilner
 Author: Lauren Blair Wilner [aut, cre, cph]
     (<https://orcid.org/0000-0003-4439-3734>),
   Stephen J Mooney [aut]
 Maintainer: Lauren Blair Wilner <wilnerl@uw.edu>
 Repository: CRAN
-Date/Publication: 2023-09-22 23:50:03 UTC
+Date/Publication: 2023-10-09 17:20:02 UTC

@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -21,7 +21,7 @@ knitr::kable(head(walk_bouts))
 ## ----head summary, echo = FALSE-----------------------------------------------
 knitr::kable(head(summary_walk_bouts))
 
-## ---- message=FALSE, warning=FALSE--------------------------------------------
+## ----message=FALSE, warning=FALSE---------------------------------------------
 accelerometry_counts <- make_smallest_bout_without_metadata()
 gps_data <- generate_walking_in_seattle_gps_data()
 generate_bout_plot(accelerometry_counts, gps_data, 1)
