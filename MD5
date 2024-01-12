@@ -1,7 +1,7 @@
-bc2a785f75431a1a391613dd11b67fa3 *DESCRIPTION
+caade4aead1ab2ea3ebd44cbd1f979c4 *DESCRIPTION
 ad7673141d5d402597c389cc2e8e025e *LICENSE
 d23685ad615995ec565af92cc23df637 *NAMESPACE
-f42f2a81c076cdd4d9cadcd149f35c32 *NEWS.md
+64f52bab06c1a938a803ffd8cf009d28 *NEWS.md
 56c0ac09dbc3e05a2a91f439a515bbbb *R/identify_walk_bouts_in_gps_and_accelerometry_data.R
 e554c0831afba4e5cbfe2361466d18f8 *R/logo.R
 fc4b6c87aedb8a963491c0a84de71789 *R/parameters.R
@@ -13,9 +13,9 @@ f0f174b22c23184c46ffa9015cdf4b61 *R/sample_data.R
 d6600c30d12a40e4f63af0a87f5708a7 *R/utils-pipe.R
 9053f262ddf37fd81e9b49e96aef5533 *R/validate_accelerometry_data.R
 257323f51b6a1ddba57d4b2f3dab06fa *R/walkboutr-package.R
-49633e984e64753e96ca7b3f4acdcaef *README.md
-439bf689fa27cf9affd0335332142165 *build/partial.rdb
-664253815119d3a08e007e9f5508b819 *build/vignette.rds
+fb962b21fb67f7d71326040878d06b13 *README.md
+8faf250d78a120ba4c7ea2186efddd24 *build/partial.rdb
+03e0ee72562a266a93680c0c78b757bf *build/vignette.rds
 1c98f1f9f1a96e5a43c186cdd5d207ca *inst/doc/changing_default_parameters.R
 5301633ded52dc93e2036cb0d8637b69 *inst/doc/changing_default_parameters.Rmd
 e688b74df3fd501f8599b039d06080ca *inst/doc/changing_default_parameters.html
